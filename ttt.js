@@ -95,6 +95,9 @@ String.prototype.contains = function(it) { return this.indexOf(it) != -1; };
             }     
  
         if (user_clicked == 9 || winflag==true){
+            if (winflag == false){
+            alert("no winner");
+                }
             reset_Game();
             return;
         }

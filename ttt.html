@@ -1,0 +1,67 @@
+<!DOCTYPE>
+
+<html>
+<head> 
+    <style>
+    .cell{
+    display: inline-block;
+    height: 100px;
+    width: 100px;
+    background: lightblue;
+    border: 1px solid yellow;
+        
+    }
+    
+    .player1{
+        background-color: red;
+    }
+    .player2{
+    
+    }
+    .helper{
+    display: inline-block;
+    }
+    
+    </style>
+    
+    </head>
+
+<body>
+    <div class = "game_area">
+        <div class="cell" onclick='game_clicked(this)' blockNum = '0'>&nbsp;</div>
+        <div class="cell" onclick='game_clicked(this)' blockNum = '1'>&nbsp;</div>
+        <div class="cell" onclick='game_clicked(this)' blockNum = '2'>&nbsp;</div>
+        <br />
+        <div class="cell" onclick='game_clicked(this)' blockNum = '3'>&nbsp;</div>
+        <div class="cell" onclick='game_clicked(this)' blockNum = '4'>&nbsp;</div>
+        <div class="cell" onclick='game_clicked(this)' blockNum = '5'>&nbsp;</div>
+        <br />
+        <div class="cell" onclick='game_clicked(this)' blockNum = '6'>&nbsp;</div>
+        <div class="cell" onclick='game_clicked(this)' blockNum = '7'>&nbsp;</div>
+        <div class="cell" onclick='game_clicked(this)' blockNum = '8'>&nbsp;</div>
+        <br />
+
+    <button class = "player1">Player X</button>
+    <button class = "player2">Player O</button>
+    <button class = "gameReset" onclick = "reset_Game();">Restart Game</button>
+        
+    </div>
+    <div class = "helper">
+        <div class = "helper"> 0 </div>
+        <div class = "helper"> 1 </div>
+        <div class = "helper"> 2 </div> <br />
+        <div class = "helper"> 3 </div>
+        <div class = "helper"> 4 </div>
+        <div class = "helper"> 5 </div> <br /> 
+        <div class = "helper"> 6 </div>
+        <div class = "helper"> 7 </div>
+        
+        <div class = "helper"> 8 </div>
+        </div>
+    <script src = "ttt.js"> 
+    
+    
+    </script>
+    
+    </body>
+</html>
